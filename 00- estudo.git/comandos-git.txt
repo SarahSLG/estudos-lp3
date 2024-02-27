@@ -9,3 +9,5 @@ para o próximo commit
 
 git add . - adiciona todos os arquivos modificados ou não rastreados 
 do diretorio atual
+
+git commit -m "mensagem"
