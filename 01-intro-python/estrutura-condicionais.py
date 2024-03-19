@@ -85,3 +85,42 @@ if dia in dias:
     print(dias[dia])
 
     #ba ba ba, ba ba, baba, ba ba ba, ba ba, baba
+
+# OPERADOR TERNÁRIO (atribuição de valores por condicional)
+idade = 20
+# maior ou menor 
+status = '' 
+
+# SEM Ternário
+if idade >= 18:
+    status = 'maior'
+else:  
+    status = 'menos'
+
+# COM Ternário
+status = 'maior' if idade >= 18 else 'menor'
+
+# MATCH (switch avançado do python)
+# _ (caso default)
+match dia:
+        case 1:
+            print('Domingo')
+        case 2:
+            print('Segunda')
+        case 3:
+            print('Terça')
+        case _:
+            print('Dia inválido')
+
+
+match dia:
+    case 1 | 7:
+        print('Fim de semana')
+    case 2 | 3 | 4 | 5 | 6:
+        print('Dia útil')
+    case _:
+        print('Dia inválido')
+
+# Documentação do match    
+# https://peps.python.org/pep-0622/
+
