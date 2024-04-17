@@ -1,5 +1,5 @@
 def VerificaVogal(c): # recebe uma letra de STR
-    Vogais = "a, e, i, o, u" # lista usada p/ dizer oq é vogal
+    Vogais = "aeiou" # lista usada p/ dizer oq é vogal
     if (c in Vogais):
         return True
     else:
@@ -16,7 +16,7 @@ def ContaVogais (STR):
     return print('número de vogais: ', qtd)
 
 def Verifica_Consoante(c):
-    consoantes = "b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, y, z"
+    consoantes = "bcdfghjklmnpqrstvwyz"
     if (c in consoantes):
         return True
     else:
