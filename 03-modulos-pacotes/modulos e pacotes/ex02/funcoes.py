@@ -1,15 +1,15 @@
 def imc(peso, altura):
-    imc = peso / altura * altura
-
-
+    return peso / (altura * altura)
+    
 def peso_normal(imc):
-    if imc > 24.90:
-        diferenca = imc - 24.90
-        return print('É necessário perder ', diferenca)
-    else:
-        imc < 24.90
+    if imc < 24.90:
         diferenca = 24.90 - imc
-        return print('É necessário ganhar ', diferenca)
+        print(f'É necessário ganhar {diferenca:.2f}')
+    elif imc > 24.90:
+        diferenca = imc - 24.90
+        print(f'É necessário perder {diferenca:.2f}')
+    else:
+        print('Você possui o peso ideal')
 
 def classificacao(imc):
     if imc < 18.5:
