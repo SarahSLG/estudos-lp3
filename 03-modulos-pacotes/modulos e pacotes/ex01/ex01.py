@@ -11,5 +11,5 @@ volume = volume(comprimento, altura, largura)
 print('o volume é ', volume)
 potenciatermostato = potenciatermostato(volume, tempdesejada, tempambiente)
 print('A potência do termostato necessária para manter a temperatura adequada dentro do aquário é ', potenciatermostato)
-qtdfiltragem = qtdfiltragem
-print('A quantidade em litros de filtragem por hora necessária para manter a qualidade da água.' , qtdfiltragem)
+qtdfiltragem = qtdfiltragem(volume)
+print('A quantidade em litros de filtragem por hora necessária para manter a qualidade da água é ' , qtdfiltragem)
